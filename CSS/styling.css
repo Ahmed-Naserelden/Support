@@ -1,0 +1,73 @@
+parent, body{
+
+    margin:0px;
+}
+body{
+    height: 1500px;
+}
+.parent{
+    /* border: 2px solid red; */
+}
+.parent div{
+    background-color:rgb(32, 81, 124);
+    padding: 10px 0px;
+    margin: 0px;
+    color: white;
+    font-size:large;
+    text-align: center;
+    width: 25%;
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.parente{
+    margin-bottom: 20px;
+    counter-increment: member-counter;
+    overflow: hidden;
+}
+.parent .user{
+    float: left;
+}
+.one{
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+}
+.user{
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 110.4px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.one{
+    position: relative;
+}
+
+.one::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -10px;
+    top: 0px;
+    background-color: #009688;
+}
+.one::before{
+    content: counter(member-counter);
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin-top: -10px;
+    left: -10px;
+    top: 50%;
+    border: 10px solid;
+    border-color: transparent transparent transparent #009688;
+}
