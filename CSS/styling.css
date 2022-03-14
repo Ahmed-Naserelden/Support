@@ -1,12 +1,16 @@
-parent, body{
-
+body{
     margin:0px;
+}
+*{
+    box-sizing: border-box;
 }
 body{
     height: 1500px;
 }
 .parent{
     /* border: 2px solid red; */
+    box-sizing: border-box;
+    /* border-width: 10px; */
 }
 .parent div{
     background-color:rgb(32, 81, 124);
@@ -17,6 +21,13 @@ body{
     text-align: center;
     width: 25%;
     float: right;
+    border-bottom: 5px solid rgb(32, 81, 124);
+    box-sizing:border-box;
+    padding: 10px;
+}
+.parent div:hover{
+    border-bottom-color:#009688;
+    
 }
 .clear{
     clear: both;
@@ -70,4 +81,27 @@ body{
     top: 50%;
     border: 10px solid;
     border-color: transparent transparent transparent #009688;
+}
+.shdo{
+    color:#ffffff;
+    padding: 20px;
+    /*background-color: #000000;*/
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 10px 10px 10px 10px green
+    ,10px 10px 10px 10px rgb(8, 113, 233) inset;
+}
+.one1{
+    position: absolute;
+    height: 100px;
+    width: 500px;
+    background-color: #009688;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-property: width;
+}
+.one1:hover{
+    text-align: center;
+    margin: 50px;
+    width: 1000px
 }
