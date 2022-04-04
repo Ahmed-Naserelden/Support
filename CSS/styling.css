@@ -8,7 +8,7 @@
     }
 
     body {
-    background: #d83d3d;
+    background: #004D40;
     }
 
     .main-nav {
@@ -45,21 +45,21 @@
     }
 
     .main-nav li:nth-child(1) a {
-    background: #d83d3d;
+    background: #004D40;
     border: 2px solid #fff;
     }
     .main-nav li:nth-child(1) a:hover {
     background: #fff;
-    color: #d83d3d;
+    color: #004D40;
     }
 
     .main-nav li:nth-child(2) a {
-    background: #9e2c2c;
-    border: 2px solid #9e2c2c;
+    background: #004D40;
+    border: 2px solid #004D40;
     }
     .main-nav li:nth-child(2) a:hover {
-    background: #b13131;
-    border: 2px solid #b13131;
+    background: #004D40;
+    border: 2px solid #004D40;
     }
 
     .user-modal {
@@ -68,7 +68,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(127, 37, 37, 0.9);
+    background: #004D40;
     z-index: 3;
     overflow-y: auto;
     cursor: pointer;
@@ -215,7 +215,7 @@
     outline: none;
     }
     .form input.has-error {
-    border: 1px solid #d76666;
+    border: 1px solid #004D40;
     }
     .form input[type=password] {
     /* space left for the HIDE button */
@@ -224,7 +224,7 @@
     .form input[type=submit] {
     padding: 16px 0;
     cursor: pointer;
-    background: #F64747;
+    background: #004D40;
     color: #FFF;
     font-weight: bold;
     border: none;
@@ -239,10 +239,10 @@
     -o-transition: all 0.30s ease-in-out;
     }
     .form input[type=submit]:hover {
-    background: #d83d3d;
+    background: #004D40;
     }
     .no-touch .form input[type=submit]:hover, .no-touch .form input[type=submit]:focus {
-    background: #d83d3d;
+    background: #004D40;
     outline: none;
     }
     .form .hide-password {
@@ -414,21 +414,17 @@
     }
 
     .accept-terms {
-    color: #F64747;
+    color: #004D40;
     text-decoration: none;
     padding: 0 1px 1px 2px;
     border-bottom: 1px solid rgba(246, 71, 71, .0);
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
     }
 
     .accept-terms:hover {
-    -webkit-animation: borderslide-2px .5s;
-            animation: borderslide-2px .5s;
-    padding-bottom: 2px;
-    border-bottom: 1px solid rgba(246, 71, 71, 1);
+        -webkit-animation: borderslide-2px .5s;
+        animation: borderslide-2px .5s;
+        padding-bottom: 2px;
+        border-bottom: 1px solid rgba(246, 71, 71, 1);
     }
 
     #login, #signup, #reset-password {

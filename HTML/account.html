@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>Education</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../CSS/styles.css">
+	<link rel="stylesheet" href="../CSS/demo.css">
+    
+	<script>
+		$(document).ready(function(){
+			$(".hamburger .hamburger__inner").click(function(){
+			$(".wrapper").toggleClass("active")
+			})
+
+			$(".top_navbar .fas").click(function(){
+			$(".profile_dd").toggleClass("active");
+			});
+		})
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="top_navbar">
+    <div class="hamburger">
+      <div class="hamburger__inner">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="logo">
+        Coding Market
+      </div>
+      <div class="right_menu">
+        <ul>
+          <li><i class="fas fa-user"></i>
+            <div class="profile_dd">
+              <div class="dd_item">Profile</div>
+              <div class="dd_item">Change Password</div>
+              <div class="dd_item">Logout</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+  <div class="main_container">
+      <div class="sidebar">
+          <div class="sidebar__inner">
+            <div class="profile">
+              <div class="img">
+                <img src="../img/pic.png" alt="profile_pic">
+              </div>
+              <div class="profile_info">
+                  <p>Welcome</p>
+                  <p class="profile_name">Ahmed</p>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <a href="#" class="active">
+                  <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                  <span class="title">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon"><i class="fas fa-bell"></i></span>
+                  <span class="title">Notfications</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon"><i class="fab fa-elementor"></i></span>
+                  <span class="title">Exames</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                  <span class="title">Standing</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon"><i class="fas fa-border-all"></i></span>
+                  <span class="title">Outlay</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="container">
+          
+  <header class="intro">
+	</header>
+  </div>
+  
+</div>	
+</body>
+</html>
