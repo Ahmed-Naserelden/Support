@@ -6,8 +6,9 @@
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="../CSS/styles.css">
-	<link rel="stylesheet" href="../CSS/demo.css">
+  <link rel="icon" type="image/x-icon" href="../clock.png">
+  <link rel="stylesheet" href="../CSS/styles.css">
+	<!-- <link rel="stylesheet" href="../CSS/demo.css"> -->
     
 	<script>
 		$(document).ready(function(){
@@ -23,33 +24,6 @@
 </head>
 <body>
 
-<div class="wrapper">
-  <div class="top_navbar">
-    <div class="hamburger">
-      <div class="hamburger__inner">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
-      </div>
-    </div>
-    <div class="menu">
-      <div class="logo">
-        Coding Market
-      </div>
-      <div class="right_menu">
-        <ul>
-          <li><i class="fas fa-user"></i>
-            <div class="profile_dd">
-              <div class="dd_item">Profile</div>
-              <div class="dd_item">Change Password</div>
-              <div class="dd_item">Logout</div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-    
   <div class="main_container">
       <div class="sidebar">
           <div class="sidebar__inner">
@@ -63,31 +37,26 @@
               </div>
             </div>
             <ul>
-              <li>
+              <li onclick="blocke(0)">
                 <a href="#" class="active">
-                  <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                  <span class="icon"><i class="fas fa-house-user"></i></span>
                   <span class="title">Home</span>
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fas fa-bell"></i></span>
-                  <span class="title">Notfications</span>
-                </a>
-              </li>
-              <li>
+              
+              <li onclick="blocke(2)">
                 <a href="#">
                   <span class="icon"><i class="fab fa-elementor"></i></span>
                   <span class="title">Exames</span>
                 </a>
               </li>
-              <li>
+              <li onclick="blocke(3)">
                 <a href="#">
                   <span class="icon"><i class="fas fa-chart-pie"></i></span>
                   <span class="title">Standing</span>
                 </a>
               </li>
-              <li>
+              <li onclick="blocke(4)">
                 <a href="#">
                   <span class="icon"><i class="fas fa-border-all"></i></span>
                   <span class="title">Outlay</span>
@@ -96,12 +65,223 @@
             </ul>
           </div>
       </div>
-      <div class="container">
+      <div class="container home">
+        <div class="share-box">
+          <div class="textarea">
+            <input type="text" placeholder="Title" id="title">
+            <textarea class="textarea-content" id="textarea-content"></textarea>
+            <button class="share" onclick="share()">Share</button>
+          </div>
+        </div>
+        <div class="content-box" id="content-box">
+          <div class="post post-1">
+            <h2>Ahmed</h2>
+            <div class="line"></div>
+            <div class="content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam, dicta dolor earum distinctio ullam delectus neque sint fugiat ratione veniam, nobis repellendus reprehenderit quo explicabo. A nisi ad natus?
+            </div>
+            <div class="comment-box comment1">
+            <textarea class="comment"></textarea>
+            <button class="replay" onclick="showcomment()">replay</button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>  
+      <div class="container notfications">
+        
+      </div>  
+      <div class="container exames">
+        <div class="parent">
+          <div class="one1" onclick="disk(0)">Level one</div>
+          <div class="two" onclick="disk(1)">Level Two</div>
+          <div class="three" onclick="disk(2)">level Three</div>
+        </div>
+        <div class="parent">
+          <div class="ex one1">
+            <ul>
+              <li>Weak 1</li>
+              <li>Weak 2</li>
+              <li>Weak 3</li>
+              <li>Weak 4</li>
+              <li>Weak 5</li>
+              <li>Weak 6</li>
+              <li>Weak 7</li>
+              <li>Weak 8</li>
+              <li>Weak 9</li>
+              <li>Weak 10</li>
+              <li>Weak 11</li>
+            </ul>
+          </div>
+          <div class="ex two">
+            <ul>
+              <li>Weak 1</li>
+              <li>Weak 2</li>
+              <li>Weak 3</li>
+              <li>Weak 4</li>
+              <li>Weak 5</li>
+              <li>Weak 6</li>
+              <li>Weak 7</li>
+              <li>Weak 8</li>
+              <li>Weak 9</li>
+              <li>Weak 10</li>
+              <li>Weak 11</li>
+              
+            </ul>
+          </div>
+          <div class="ex three">
+            <ul>
+              <li>Weak 1</li>
+              <li>Weak 2</li>
+              <li>Weak 3</li>
+              <li>Weak 4</li>
+              <li>Weak 5</li>
+              <li>Weak 6</li>
+              <li>Weak 7</li>
+              <li>Weak 8</li>
+              <li>Weak 9</li>
+              <li>Weak 10</li>
+              <li>Weak 11</li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+      <div class="container standing">
+        <div>
+          <div class="parent">
+            <div class="one1" onclick="dis(0)">Level one</div>
+            <div class="two" onclick="dis(1)">Level Two</div>
+            <div class="three" onclick="dis(2)">level Three</div>
+          </div>
+          <ol class="lvl">
+            <li class="_1 one">Omar</li>
+            <li class="_1">Khaled</li>
+            <li class="_1">Ziad</li>
+            <li class="_1">Mohamed</li>
+            <li>Tlha</li>
+            <li>Taha</li>
+            <li>Mostafa</li>
+            <li>Mahaoude</li>
+            <li>Mahaoude</li>
+            <li>Mostafa</li>
+            <li>Mahaoude</li>
+            <li>Taha</li>
+            <li>Taha</li>
+          </ol>
+          <ol class="lvl">
+            <li class="_1 one">Ahmed</li>
+            <li class="_1">Ziad</li>
+            <li class="_1">Mohamed</li>
+            <li>Tlha</li>
+            <li>Taha</li>
+            <li>Mostafa</li>
+            <li>Mahaoude</li>
+            <li>Mahaoude</li>
+            <li>Mostafa</li>
+            <li>Mahaoude</li>
+            <li>Taha</li>
+            <li>Taha</li>
+          </ol>
+          <ol class="lvl">
+            
+            <li class="_1 one">Omar</li>
+            <li class="_1">Khaled</li>
+            <li class="_1">Ziad</li>
+            <li class="_1">Mohamed</li>
+            <li>Tlha</li>
+            <li>Taha</li>
+            <li>Mostafa</li>
+            <li>Mahaoude</li>
+            <li>Mahaoude</li>
+            <li>Mostafa</li>
+            <li>Mahaoude</li>
+            <li>Taha</li>
+            <li>Taha</li>
+          </ol>
           
-  <header class="intro">
-	</header>
+        </div>
+      </div>  
+      <div class="container outlay">
+        <h2>Outlay</h2>
+        <hr>
+        <table>
+          <tr>
+            <th>Month</th>
+            <th>January</th>
+            <th>February </th>
+            <th>March </th>
+            <th>April </th>
+            <th>May</th>
+            <th>June</th>
+            <th>July </th>
+            <th>August</th>
+            <th>September </th>
+            <th>October </th>
+            <th>November</th>
+            <th>December</th>
+          </tr>
+            <td>Case</td>
+            <td style="background-color: green;"><span class="fas fa-check" style="color: #FFF;"></span></td>
+            <td><span class="fas fa-check" style="color: green;"></span></td>
+            <td><span class="fas fa-check" style="color: green;"></span></td>
+            <td><span class="fas fa-check" style="color: green;"></span></td>
+            <td><span class="fab fa-xbox" style="color: red;"></span></td>
+            <td><span class="fas fa-check" style="color: green;"></span></td>
+            <td><span class="fas fa-check" style="color: green;"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tr>
+        <td>Date</td>
+        <td style="color: green;">28/1</td>
+        <td>29/2</td>
+        <td>25/3</td>
+        <td>28/4</td>
+        <td style="color: red;">none</td>
+        <td>30/6</td>
+        <td>23/7</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+        </table>
+      </div>  
   </div>
-  
+  <div class="wrapper">
+    <div class="top_navbar">
+      <div class="hamburger">
+        <div class="hamburger__inner">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="logo">
+          Education
+        </div>
+        <div class="right_menu">
+          <ul>
+            <li><i class="fas fa-user"></i>
+              <div class="profile_dd">
+                <div class="dd_item" onclick="go('profile.html')">Profile</div>
+                <div class="dd_item">Change Password</div>
+                <div class="dd_item" onclick="go('login1.html')">Logout</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 </div>	
+
+<script src="../JAVASCRIPT/account.js"></script>
 </body>
 </html>
